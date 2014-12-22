@@ -4,7 +4,7 @@ FROM ubuntu:latest
 MAINTAINER Bradley Cicenas <bradley.cicenas@gmail.com>
 
 RUN apt-get -yqq update && \
-    apt-get install -yq nginx apt-mirror dsniff
+    apt-get install -yq nginx dsniff
 
 ADD . /app 
 
