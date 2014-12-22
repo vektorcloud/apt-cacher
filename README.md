@@ -5,5 +5,13 @@ Apt-catcher is a simple apt package cache suitable in any case where an entire p
 Getting Started
 -----------
 
+Run:
+
+```
+docker run -ti -p 80:80 bcicen/apt-cacher
+```
+
+and update your local apt sources.list to point to the 
+
 Usage
 -----------
