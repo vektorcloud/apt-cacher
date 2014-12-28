@@ -1,9 +1,8 @@
-apt-cacher
-==========
-Apt-catcher is a simple apt package cache for use with Docker, but suitable in any case where an entire package mirror may be overkill.
+# apt-cacher
 
-Getting Started
------------
+Apt-cacher is a simple apt package cache for use with Docker, but suitable in any case where an entire package mirror may be overkill.
+
+## Getting Started
 
 Run:
 
