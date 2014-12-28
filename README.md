@@ -34,6 +34,3 @@ and add an /etc/hosts entry on the host pointing to localhost or the address of 
 127.0.0.1    archive.ubuntu.com
 127.0.0.1    security.ubuntu.com
 ```
-
-Usage
------------
