@@ -1,4 +1,4 @@
-#apt-cacher v0.2
+#apt-cacher v0.3
 
 FROM ubuntu:latest
 MAINTAINER Bradley Cicenas <bradley.cicenas@gmail.com>
