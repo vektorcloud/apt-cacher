@@ -8,10 +8,8 @@ RUN apt-get -yqq update && \
 
 ADD . /app 
 
-RUN /bin/bash /app/mkdirs.sh
-
-RUN ln -nsf /app/nginx.conf /etc/nginx/nginx.conf
+RUN /bin/bash /app/mkdirs.sh && \
+    ln -nsf /app/nginx.conf /etc/nginx/nginx.conf
 
 EXPOSE 80
-
 CMD /bin/bash /app/run.sh
