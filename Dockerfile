@@ -1,15 +1,11 @@
-#apt-cacher v0.3
+FROM quay.io/vektorcloud/nginx:latest
 
-FROM ubuntu:latest
-MAINTAINER Bradley Cicenas <bradley.cicenas@gmail.com>
+RUN apk add --no-cache wget bash
 
-RUN apt-get -yqq update && \
-    apt-get install -yq nginx wget
-
-ADD . /app 
+COPY . /app
 
 RUN /bin/bash /app/mkdirs.sh && \
-    ln -nsf /app/nginx.conf /etc/nginx/nginx.conf
+    mv -v /app/nginx.conf /etc/nginx/nginx.conf
 
 EXPOSE 80
 CMD /bin/bash /app/run.sh
