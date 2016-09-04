@@ -22,6 +22,6 @@ function init_cachedirs() {
 [ -d $CACHEDIR ] || init_cachedirs
 
 RESOLVER=$(grep nameserver /etc/resolv.conf | awk '{print $2}' | head -1)
-sed -i "s|_RESOLVER_|$RESOLVER|g;s|_CACHEDIR_|$CACHEDIR|g" /nginx-template.conf > /etc/nginx/nginx.conf
+sed "s|_RESOLVER_|$RESOLVER|g;s|_CACHEDIR_|$CACHEDIR|g" /nginx-template.conf > /etc/nginx/nginx.conf
 
 exec /usr/sbin/nginx -c /etc/nginx/nginx.conf
