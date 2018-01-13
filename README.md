@@ -1,5 +1,7 @@
 # apt-cacher
 
+![circleci][circleci]
+
 Apt-cacher is a simple apt package cache for use with Docker, but suitable in any case where an entire package mirror may be overkill.
 
 ## Quickstart
@@ -31,3 +33,5 @@ and add an /etc/hosts entry on the host pointing to localhost or the address of 
 127.0.0.1    archive.ubuntu.com
 127.0.0.1    security.ubuntu.com
 ```
+
+[circleci]: https://img.shields.io/circleci/project/github/vektorcloud/apt-cacher.svg "apt-cacher"
