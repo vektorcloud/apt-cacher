@@ -6,4 +6,4 @@ COPY nginx-template.conf /nginx-template.conf
 COPY run.sh /run.sh
 
 EXPOSE 80
-CMD /bin/bash /run.sh
+ENTRYPOINT ["/run.sh"]
