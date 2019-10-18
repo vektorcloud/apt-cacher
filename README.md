@@ -34,4 +34,4 @@ and add an /etc/hosts entry on the host pointing to localhost or the address of 
 127.0.0.1    security.ubuntu.com
 ```
 
-[circleci]: https://img.shields.io/circleci/project/github/vektorcloud/apt-cacher.svg "apt-cacher"
+[circleci]: https://img.shields.io/circleci/build/gh/vektorcloud/apt-cacher?color=1dd6c9&logo=CircleCI&logoColor=1dd6c9&style=for-the-badge "apt-cacher"
