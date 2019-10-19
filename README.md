@@ -1,6 +1,6 @@
 # apt-cacher
 
-![circleci][circleci]
+[![circleci][circleci]](https://circleci.com/gh/vektorcloud/apt-cacher)
 
 Apt-cacher is a simple apt package cache for use with Docker, but suitable in any case where an entire package mirror may be overkill.
 
